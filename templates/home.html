@@ -1,7 +1,120 @@
 {% extends "layout.html" %}
 {% block content %}
+
+<head>
+    <title>Flask App</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
 <div class="home">
-    <h1>My homepage</h1>
-    <p>This is a test website</p>
+    <h1>Pandelis Toumbelekis</h1>
+      </header>
+      <section class="intro">
+        <h3>{title: "Junior Developer", company: "@nerdypandy", interests: {["Code", "Web Development", "Technology", "Small Business"]}</h3>
+      </section>
+<! –– Social Media Links using Flex box ––>
+      <section>
+        <div class="social-media-buttons">
+          <a href="https://www.facebook.com/nerdypandy/" class="fa fa-facebook"></a>
+          <a href="https://twitter.com/nerdypandy" class="fa fa-twitter"></a>
+          <a href="https://www.linkedin.com/in/pandelis-toumbelekis-1a2383117/" class="fa fa-linkedin"></a>
+          <a href="https://github.com/PandelisT" class="fa fa-github"></a>
+        </div>
+      </section>
+    </section>
+    </section>
+<! –– Hero image with introduction using Flex box––>
+    <section class="hero-image" role="img" aria-hidden="true">
+      <div class="hero-text">
+        <h2>Welcome to my Portfolio Website</h2>
+        <h3>I'm passionate about helping individuals, not for profits and businesses achieve their goals and finding solutions through technology. I completed a Bachelor of
+            Engineering in Materials Science and currently completing an MBA specialising in Change Management at AGSM UNSW as well as a Diploma in IT at Coder Academy. I have been designing WordPress websites since 2014 and now I am on my way to become a junior
+            developer…</h3>
+        <section class="center-button">
+          <a href='portfolio.html'><button class="buttons center-button">View my Portfolio</button></a>
+        </section>
+      </div>
+    </section>
+  </section>
+<! –– Latest Blog section ––>
+  <section id="latestBlog">
+    <div class="mainSection">
+      <h2>Latest Post</h2>
+      <img id="blogImage" role="img" aria-label="Domain Name">
+      <h3>3 reasons why Australian Businesses should have a .com.au domain name</h3>
+      <p>To put it simply, your domain name is your business’ online identity. Just like a physical store, you’ll want your online <em>‘address’</em> to be memorable and easy to find on the net.</p>
+      <p>One question that often arises is whether an Australian business should register a <strong>.com.au</strong> or <strong>.com</strong> domain. Below we will outline the advantages of having a .com.au for your Australian business.</p>
+      <section class="center-button">
+        <a href='blog.html'><button class="buttons" href="blog.html">View my Blog</button></a>
+    </div>
+  </section>
+<!–– My skills section ––>
+  <section id="mySkills">
+    <div class="mainSection">
+      <h2>My Skills</h2>
+      <p>HTML</p>
+      <div class="allSkills">
+        <div class="skills html">80%</div>
+      </div>
+      <p>CSS</p>
+      <div class="allSkills">
+        <div class="skills css">70%</div>
+      </div>
+      <p>JavaScript</p>
+      <div class="allSkills">
+        <div class="skills js">10%</div>
+      </div>
+      <p>WordPress</p>
+      <div class="allSkills">
+        <div class="skills wordpress">90%</div>
+      </div>
+      <p>Git</p>
+      <div class="allSkills">
+        <div class="skills git">70%</div>
+      </div>
+      <p>Python</p>
+      <div class="allSkills">
+        <div class="skills python">5%</div>
+      </div>
+      <p>SEO</p>
+      <div class="allSkills">
+        <div class="skills seo">80%</div>
+      </div>
+      <p>Digital Marketing</p>
+      <div class="allSkills">
+        <div class="skills marketing">75%</div>
+      </div>
+    </div>
+  </section>
+<! –– Testimonials using Flexbox for greater than 1000px width ––>
+  <section id="allTestimonials">
+    <div class="mainSection">
+      <h2>Testimonials</h2>
+      <div id="testimonials">
+      <div class="singleTestimonial">
+      <p><em>Could not be happier with Nerdy Pandy, Pandelis listened to all my requests and made it all happen in a timely and profession fashion.</em></p>   
+      <h3><i class="fa fa-address-card"></i>Harry M. - Small Business Owner</h3>
+      </div>
+      <div class="singleTestimonial">
+      <p><em>Very knowledgeable and broad-range of skills. Responsive to inquiries, friendly and asks important questions up front!</em></p>     
+      <h3><i class="fa fa-address-card"></i>John D. - Website Administrator</h3>
+      </div>
+    </div>
+    </div>
+  </section>
+<! –– Footer with contact details using Flex box––>
+  <footer>
+      <h3>Contact Me</h3>
+      <section>
+        <div class="social-media-buttons">
+          <a href="tel:+61405819846" class="fa fa-phone-square"></a>
+          <a href="mailto:pandeli@nerdypandy.com?subject=Contact from Portfolio Site" class="fa fa-envelope"></a>
+          <a href="https://www.facebook.com/nerdypandy/" class="fa fa-facebook"></a>
+          <a href="https://www.linkedin.com/in/pandelis-toumbelekis-1a2383117/" class="fa fa-linkedin"></a>
+        </div>
+      </section>
+    <p>&copy; 2020 Pandelis Toumbelekis</p>
+  </footer>
+
 </div>
 {% endblock %}

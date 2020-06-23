@@ -1,91 +1,704 @@
+
+
+  /* Imports fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:wght@400;500&display=swap');
+
+/* General body CSS settings */
 body {
+  font-family: 'Open Sans', sans-serif, serif;
+  color: #fff;
+  background-color: #374785;
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Headings and paragraph settings */
+h1, h2, h3, h4 {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    color: #fff;
     margin: 0;
-    padding: 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #060;
-  }
+}
+
+h1 {  
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h4 {
+    margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/* Class to set content width to 80% of screen */
+.mainSection {
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.mainSection h3 {
+  padding-bottom: 10px;
+}
+
+.mainSection#portfolio {
+  text-align: center;
+  width: 80%;
+  margin: auto auto;
+  padding: 10px;
+}
+
+article.header-intro{
+  padding:0;
+}
+
+a.download {
+  padding: 10px 0;
+  color: #ddd;
+}
+
+.mainSection a {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Navigation buttons classes and pseudo-classes */
+button.buttons:hover {
+  background-color: #007bb5;
+}
+
+button.buttons {
+  background-color: #374785;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Blog section of home page */
+#latestBlog {
+  background-color: #F76c6c;
+}
+
+/* Skills section of home page */
+#mySkills {
+  background-color: #f8e981;
+}
+
+#mySkills p{
+  margin-top: 10px;
+  color: #374785;
+}
+
+#mySkills h2 {
+  color: #374785;
+}
+
+/* Footer CSS settings */
+footer {
+  background-color: #1D3557;
+}
+
+footer p{
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+}
+footer h3 {
+  padding-top: 20px;
+}
+
+/* Style the links in the navigation bar */
+.navigation a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navigation a:hover {
+  background-color: #a8dadc;
+  color: #000000;
+}
+
+.navigation a.active {
+  background-color: #55ACEE;
+  color: #fff;
+}
+
+/* Mobile responsive view for 300px minimum width */
+@media all and (min-width: 300px) {
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  background-color: #374785;
+}
+
+/* Make logo into a circular image */
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background-image: url("images/np-logo.jpg");
+  height: 150px;
+  width: 150px;
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+}
+
+/* Colour of home background */
+
+.intro {
+  text-align: center;
+}
+
+.header-intro {
+   background-color: #374785;
+   padding-bottom: 100px;
+   height: 100vh;
+}
+
+
+.portfolio-intro {
+   background-color: #24305e;
+   padding-bottom: 20px;
+}
+
+#portfolio {
+  position: relative;
+}
+
+#portfolio p {
+  padding: 0;
+}
+
+.body {
+  background-color: #2196F3;
+}
+
+.description {
+  width: 80%;
+  text-align: left;
+  margin: 0 auto;
+  padding: 30px 0;
   
-  /*
-   * Formatting the header area
-   */
-  
-  header {
-    background-color: #DFB887;
-    height: 35px;
+}
+
+/* Page background */
+#description {
+  background-color: #24305e;
+}
+
+#jobs {
+  background-color: #a8d0e6;
+
+}
+
+#study {
+  background-color: #f76c6c;
+}
+
+#study h3 {
+  padding-top: 10px;
+}
+
+.education p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.education h3 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+#blogPosts {
+  background-color: #374785;
+}
+
+.blogPosts p {
+  padding: 5px 0;
+}
+
+.postmeta {
+  padding: 10px 0;
+}
+
+/* Social media buttons using Flex box*/
+.social-media-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.buttons {
+  margin-top: 20px;
+  background-color: #f2f2f2;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-color: #457b9d;
+  color: #457b9d;
+  text-decoration: none;
+}
+
+.buttons:hover {
+  background-color: #a8dadc;
+  color: white;
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.center-button a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+
+.hero-image {
+  background-color: #a8d0E6; 
+  justify-content: center;
+}
+
+.hero-text {
+  position: relative;
+  width: 80%;
+  text-align: left;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+#blogImage {
+    background-image: url("images/domain-name.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    opacity: .9;
-    margin-bottom: 10px;
+    height: 300px;
+}
+#blogImageWeb1 {
+    background-image: url("images/five-bulb-lights.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+#blogImageWeb2 {
+    background-image: url("images/webplanning.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+#blogImageWeb3 {
+    background-image: url("images/webdesign.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.post {
+  display: flex;
+}
+
+/*Portfolio page Settings*/
+#portfolioImage {
+    background-image: url("images/laptop-code.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.portfolio {
+  width: 80%;
+  text-align: left;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+#fullPortfolio {
+  background-color: #374785;
+}
+
+#npscreenshot {
+  background-image: url("images/npscreenshot.jpg");
+  height: 300px;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#newportfolio {
+  background-image: url("images/newportfolio.jpg");
+  height: 300px;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.download i{
+  padding: 0;
+  color: #fff;
+}
+
+.download a {
+  text-decoration: none;
+}
+
+/*Font Awesome/social media link settings*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: #fff;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: #fff;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: #fff;
+}
+
+.fa-github {
+  background: #000000;
+  color: #fff;
+}
+
+.fa-phone-square {
+  background: #3cee0686;
+  color: #fff;
+}
+
+.fa-envelope {
+  background: #e20808;
+  color: #fff;
+}
+
+.fa-address-card {
+  color: #1D3557;
+  padding: 0;
+}
+
+/* Skill bars settings*/
+.allSkills {
+  background-color: #f2f2f2;
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: #fff; /* White text color */
+}
+
+.html {
+  width: 80%; 
+  background-color: #4CAF50;
+}
+
+.css {
+width: 70%; 
+background-color: #2196F3;
+} 
+
+.js {
+  width: 10%; 
+  background-color: #f44336;
+} 
+
+.git {
+  width: 70%; 
+  background-color: rgb(76, 172, 175);
+} 
+
+.wordpress {
+  width: 90%; 
+  background-color: #f436eb;
+} 
+
+.python {
+  width: 5%; 
+  background-color: #808080;
   }
-  
-  header h1.logo {
-    margin: 0;
-    font-size: 1.7em;
-    color: #fff;
-    text-transform: uppercase;
-    float: left;
+
+.seo {
+  width: 80%; 
+  background-color: #1d9919;
   }
-  
-  header h1.logo:hover {
-    color: #fff;
-    text-decoration: none;
+
+.marketing {
+  width: 75%; 
+  background-color: #f3d92f;
   }
-  
-  /*
-   * Center the body content
-   */
-  
-  .container {
-    width: 1200px;
-    margin: 0 auto;
-  }
-  
-  div.home {
-    padding: 10px 0 30px 0;
-    background-color: #E6E6FA;
-    -webkit-border-radius: 6px;
-       -moz-border-radius: 6px;
-            border-radius: 6px;
-  }
-  
-  div.about {
-    padding: 10px 0 30px 0;
-    background-color: #E6E6FA;
-    -webkit-border-radius: 6px;
-       -moz-border-radius: 6px;
-            border-radius: 6px;
-  }
-  
-  h2 {
-    font-size: 3em;
-    margin-top: 40px;
-    text-align: center;
-    letter-spacing: -2px;
-  }
-  
-  h3 {
-    font-size: 1.7em;
-    font-weight: 100;
-    margin-top: 30px;
-    text-align: center;
-    letter-spacing: -1px;
-    color: #999;
-  }
-  
-  .menu {
-    float: right;
-    margin-top: 8px;
-  }
-  
-  .menu li {
-    display: inline;
-  }
-  
-  .menu li + li {
-    margin-left: 35px;
-  }
-  
-  .menu li a {
-    color: #444;
-    text-decoration: none;
-  }
-  
+
+article {
+  padding: 20px;
+}
+
+.singleTestimonial {
+  color:#1D3557;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+  border-style: solid;
+  border-color: #f2f2f2;
+  border-width: 1px;
+  border-radius: 20px;
+}
+
+.singleTestimonial h3 {
+  padding-top: 10px;
+   color:#1D3557;
+}
+
+#allTestimonials{
+  background-color: #a8d0E6;
+  color: #f2f2f2;
+}
+
+#allTestimonials h2{
+  color: #1D3557;
+}
+/* Blog Page CSS */
+
+#blogImageBusiness {
+    background-image: url("images/Open-business.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.videoBlog {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+}
+
+/* Tablet/Mobile responsive view for 500px minimum width */
+@media all and (min-width: 500px) {
+
+/* Navigation with z-index=2 to be on the top layer as a sticky menu*/
+.navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: #374785;
+}
+
+.header-intro {
+   background-color: #374785;
+   padding-bottom: 0;
+   padding-top: 50px;
+   height: 50vh;
+}
+
+.about {
+  background-color: #374785;
+  margin: auto;
+}
+
+.about p{
+  background-color: #374785;
+  padding: 0;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/laptop-code.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  width: 80%;
+}
+
+article {
+  padding: 20px;
+}
+
+.about article p{
+  padding: 0;
+}
+
+.footerBackground {
+  background-color: #1D3557;
+}
+
+}
+
+/* Desktop responsive view for 1000px minimum width */
+@media all and (min-width: 1000px) {
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  background-color: #374785;
+}
+
+.header-intro {
+   background-color: #374785;
+   padding-bottom: 20px;
+   height: auto;
+   padding-top: 50px;
+}
+
+.description {
+  width: 60%;
+  text-align: left;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio article p{
+  padding: 20px;
+}
+
+article {
+  padding: 20px;
+}
+
+.about article{
+  padding: 0;
+}
+
+.parallaxImage {
+  background-image: url("images/laptop-code.jpg");
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.mainSection {
+  text-align: left;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* The hero image on blog, about,portfolio pages using Flex box CSS*/
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/laptop-code.jpg");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* The text on the hero image on blog, about,portfolio pages*/
+.hero-text {
+  position: absolute;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Work Experience on About page using Grid CSS*/
+.job-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px;
+  padding: 20px 0;
+}
+
+.job-details h3 {
+  text-align: left; 
+}
+
+.job-details h4 {
+  text-align: left;
+}
+
+#testimonials {
+  display: flex;
+  justify-content: center;
+}
+
+
+}
